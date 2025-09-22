@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Relatório Estratégico – Carreira em TI</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root{--brand:#0d6efd}
+    body {
+      background: linear-gradient(180deg, #f8f9fa 0%, #eef1f6 100%);
+      font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      line-height: 1.6;
+    }
+    header .navbar-brand {
+      font-weight: 700;
+      color: var(--brand);
+      font-size: 1.25rem;
+    }
+    .card {
+      border: none;
+      border-radius: 1rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+    }
+    .card-emoji { font-size: 28px; }
+    .search-input { max-width: 420px; }
+    .badge-section {
+      background: linear-gradient(90deg,#0d6efd,#6610f2);
+      color: #fff;
+      font-size: 0.75rem;
+      border-radius: 0.5rem;
+      padding: 0.25rem 0.5rem;
+    }
+    .btn-primary, .btn-outline-primary {
+      border-radius: 0.75rem;
+      font-weight: 500;
+    }
+    footer {
+      font-size: 0.9rem;
+      color: #6c757d;
+    }
+    @media (min-width: 992px) {
+      .container-lg { max-width: 1100px; }
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-white shadow-sm">
+  <div class="container-lg">
+    <a class="navbar-brand" href="#">Relatório TI</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link fw-medium" href="#levantamento">Levantamento</a></li>
+        <li class="nav-item"><a class="nav-link fw-medium" href="#impactos">Impactos</a></li>
+        <li class="nav-item"><a class="nav-link fw-medium" href="#sucessos">Sucessos</a></li>
+        <li class="nav-item"><a class="nav-link fw-medium" href="#estrategia">Estratégia</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container-lg py-4">
+  <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center mb-4">
+    <div class="mb-3 mb-lg-0">
+      <h1 class="h4 fw-bold mb-1">Relatório Estratégico – Carreira em TI</h1>
+      <small class="text-muted">Mapa com levantamento, impactos e recomendações</small>
+    </div>
+    <div class="d-flex gap-2">
+      <input id="search" class="form-control form-control-sm search-input" placeholder="Buscar (ex: IA, Cloud, Segurança)" aria-label="Buscar">
+      <button id="btnPrint" class="btn btn-outline-primary btn-sm" title="Imprimir / Salvar em PDF">Imprimir / PDF</button>
+      <button id="btnCopy" class="btn btn-primary btn-sm" title="Copiar resumo">Copiar resumo</button>
+    </div>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-12 col-lg-8">
+      <!-- Levantamento -->
+      <section id="levantamento" class="mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h2 class="h5 mb-3"><span class="card-emoji">🚀</span> Levantamento – Panorama da Carreira em TI <span class="badge ms-2 badge-section">Visão geral</span></h2>
+            <div class="mb-3">
+              <h3 class="h6 text-primary">Áreas de Atuação</h3>
+              <ul class="list-unstyled ms-3">
+                <li><strong>Infraestrutura e Redes</strong> — suporte técnico, administração de servidores, cloud, segurança.</li>
+                <li><strong>Desenvolvimento de Software</strong> — web, mobile, full stack, backend/frontend.</li>
+                <li><strong>Dados e IA</strong> — ciência de dados, BI, machine learning, IA generativa.</li>
+                <li><strong>Segurança da Informação</strong> — cibersegurança, pentest, compliance.</li>
+                <li><strong>Gestão de TI</strong> — projetos, governança, ERP, consultoria.</li>
+              </ul>
+            </div>
+            <div class="mb-3">
+              <h3 class="h6 text-primary">Competências Essenciais</h3>
+              <ul class="ms-3">
+                <li><strong>Técnicas:</strong> lógica, cloud (AWS/Azure/GCP), bancos, automação.</li>
+                <li><strong>Comportamentais:</strong> comunicação, resolução de problemas, colaboração.</li>
+                <li><strong>Negócio:</strong> traduzir necessidades em soluções de TI.</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="h6 text-primary">Tendências do Mercado</h3>
+              <ul class="ms-3">
+                <li>Adoção massiva de <strong>IA</strong> e automação.</li>
+                <li>Alta demanda por <strong>segurança cibernética</strong>.</li>
+                <li>Crescimento de <strong>DevOps, Cloud e Edge</strong>.</li>
+                <li>Valorização da <strong>multidisciplinaridade</strong> (TI + negócio).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Impactos -->
+      <section id="impactos" class="mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h2 class="h5 mb-3"><span class="card-emoji">📊</span> Impactos – O que esperar no caminho</h2>
+            <div class="row">
+              <div class="col-md-6">
+                <h3 class="h6 text-success">Impactos Positivos</h3>
+                <ul class="ms-3">
+                  <li>Alta empregabilidade.</li>
+                  <li>Trabalho remoto/global.</li>
+                  <li>Boa remuneração e progressão rápida.</li>
+                  <li>Flexibilidade para migrar entre áreas.</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <h3 class="h6 text-danger">Impactos Desafiadores</h3>
+                <ul class="ms-3">
+                  <li>Mercado competitivo internacional.</li>
+                  <li>Atualização contínua exigida.</li>
+                  <li>Pressão por entregas em ambientes ágeis.</li>
+                  <li>Risco de burnout.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sucessos -->
+      <section id="sucessos" class="mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h2 class="h5 mb-3"><span class="card-emoji">🏆</span> Sucessos – Quando a estratégia funciona</h2>
+            <ul class="ms-3">
+              <li>Reconhecimento profissional: referência técnica ou liderança.</li>
+              <li>Ascensão de carreira: suporte → analista → especialista → gestor/CTO.</li>
+              <li>Segurança financeira e oportunidades internacionais.</li>
+              <li>Liberdade profissional: empreender (consultoria, SaaS).</li>
+              <li>Impacto real nos negócios.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Estratégia Recomendada -->
+      <section id="estrategia" class="mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h2 class="h5 mb-3"><span class="card-emoji">🎯</span> Estratégia Recomendada</h2>
+            <ol class="ms-3">
+              <li>Definir um foco inicial sem perder flexibilidade.</li>
+              <li>Plano de estudos prático (teoria + projetos).</li>
+              <li>Certificações estratégicas (AWS, Azure, Cisco, Scrum, Segurança).</li>
+              <li>Participar de comunidades e projetos open source.</li>
+              <li>Carreira em T: especialista + conhecimento amplo.</li>
+              <li>Ampliar visão de negócio.</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="col-12 col-lg-4">
+      <div class="position-sticky" style="top:80px">
+        <div class="card shadow-sm mb-3">
+          <div class="card-body">
+            <h3 class="h6 mb-2 text-primary">Ações Rápidas</h3>
+            <p class="mb-1"><strong>1.</strong> Criar portfólio no GitHub com projetos reais.</p>
+            <p class="mb-1"><strong>2.</strong> Fazer 1 certificação prioritária (ex: AWS Cloud Practitioner).</p>
+            <p class="mb-1"><strong>3.</strong> Participar de 1 meet/bootcamp por trimestre.</p>
+          </div>
+        </div>
+
+        <div class="card shadow-sm mb-3">
+          <div class="card-body">
+            <h3 class="h6 mb-2 text-primary">Recursos</h3>
+            <ul class="mb-0">
+              <li>Plataformas de aprendizado: Coursera, Udemy, Alura.</li>
+              <li>Comunidades: Stack Overflow, GitHub, fóruns locais.</li>
+              <li>Eventos: meetups, hackathons e conferências.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card shadow-sm">
+          <div class="card-body text-center">
+            <h4 class="h6">Controle de Acesso</h4>
+            <small class="text-muted d-block mb-2">Área pública — para colaboradores internos</small>
+            <button id="btnToggleAuth" class="btn btn-outline-secondary btn-sm">Ativar modo colaborador</button>
+            <div id="authNote" class="mt-2 small text-success" style="display:none">Modo colaborador ativado — ações habilitadas</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="mt-4 mb-5 text-center">
+    <div class="small">Relatório gerado automaticamente • Use o botão imprimir para salvar em PDF • Personalize conteúdo conforme necessidade</div>
+  </footer>
+</main>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const searchInput = document.getElementById('search');
+  const sections = document.querySelectorAll('section');
+  searchInput.addEventListener('input', ()=>{
+    const q = searchInput.value.trim().toLowerCase();
+    if(!q){ sections.forEach(s=> s.style.display=''); return; }
+    sections.forEach(s=>{
+      const text = s.innerText.toLowerCase();
+      s.style.display = text.includes(q) ? '' : 'none';
+    });
+  });
+
+  document.getElementById('btnPrint').addEventListener('click', ()=> window.print());
+
+  document.getElementById('btnCopy').addEventListener('click', async ()=>{
+    const summary = `Relatório Estratégico – Carreira em TI\n\nÁreas: Infraestrutura, Desenvolvimento, Dados/IA, Segurança, Gestão.\nPrincipais ações: foco inicial, plano de estudos, certificações, networking, carreira em T.`;
+    try{
+      await navigator.clipboard.writeText(summary);
+      alert('Resumo copiado para área de transferência!');
+    }catch(e){
+      alert('Não foi possível copiar automaticamente. Selecione o texto e copie manualmente.');
+    }
+  });
+
+  const btnAuth = document.getElementById('btnToggleAuth');
+  const authNote = document.getElementById('authNote');
+  let authOn = false;
+  btnAuth.addEventListener('click', ()=>{
+    authOn = !authOn;
+    authNote.style.display = authOn ? 'block' : 'none';
+    btnAuth.textContent = authOn ? 'Desativar modo colaborador' : 'Ativar modo colaborador';
+  });
+
+  window.addEventListener('load', ()=> searchInput.focus());
+</script>
+</body>
+</html>
